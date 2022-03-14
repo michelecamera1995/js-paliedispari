@@ -73,7 +73,7 @@ function gameResult(number) {
     }
 }
 
-const evenOdd = gameResult();
+const evenOdd = gameResult(somma);
 
 console.log("il risultato è:", evenOdd);
 
@@ -81,7 +81,7 @@ console.log("il risultato è:", evenOdd);
 
 if (somma % 2 === 0 && usernumber % 2 === 0) {
     console.log("vince giocatore!")
-} else if (somma % 2 === 1 && usernumber % 2 === 1) {
+} else if (somma % 2 !== 0 && usernumber % 2 !== 0) {
     console.log("vince giocatore!")
 } else {
     console.log("vince computer!")
