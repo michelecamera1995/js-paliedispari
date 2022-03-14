@@ -30,6 +30,11 @@ const value = checkPalindrome(string);
 console.log(value);
 
 
+
+
+
+
+
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 // Sommiamo i due numeri
@@ -37,17 +42,19 @@ console.log(value);
 // Dichiariamo chi ha vinto.
 
 
-let even = false;
-let odd = false;
+let pari = false;
+let dispari = false;
 
 // l'utente inserisce un numero
-let userOddEven = parseInt(prompt("scegli pari o dispari!"));
+let userOddEven = prompt("scegli pari o dispari!");
 
-if (userOddEven.value === pari) {
-    even = true;
-} if (userOddEven.value === dispari) {
-    odd = true;
+if (userOddEven === pari) {
+    pari = true;
+} if (userOddEven === dispari) {
+    dispari = true;
 }
+
+console.log('User choice: ' + userOddEven);
 
 // l'utente inserisce un numero
 let usernumber = parseInt(prompt("inserici un numero!"));
@@ -55,11 +62,11 @@ let usernumber = parseInt(prompt("inserici un numero!"));
 // controllo che il numero immesso dall'utente sia da 1 a 5
 if (usernumber <= 5 && usernumber >= 1) {
     console.log("Your number (" + usernumber + ")  matches requirements");
-    if (usernumber % 2 === 0 && even === true) {
+    if (usernumber % 2 === 0 && pari === true) {
         let numeroDispari
         console.log("User selected even number!");
     }
-    else if (odd === true) {
+    else if (dispari === true) {
         console.log("User selected odd number!");
     }
 } else if (isNaN(usernumber)) {
