@@ -28,7 +28,6 @@ let usernumber = parseInt(prompt("inserici un numero!"));
 if (usernumber <= 5 && usernumber >= 1) {
     console.log("Your number (" + usernumber + ")  matches requirements");
     if (usernumber % 2 === 0 && pari === true) {
-        let numeroDispari
         console.log("User selected even number!");
     }
     else if (dispari === true) {
